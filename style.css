@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 
 body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -7,7 +7,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .clock-container {
@@ -22,22 +22,33 @@ body {
 }
 
 .clock {
-  font-family: 'Orbitron', monospace;
+  font-family: "Orbitron", monospace;
   font-size: 5rem;
-  color: whitesmoke;
   letter-spacing: 0.1em;
-  text-shadow: 0 4px 30px rgba(0,0,0,0.2), 0 1.5px 0 #fff;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.2), 0 1.5px 0 #fff;
   margin-bottom: 20px;
+  background: linear-gradient(to right, #60ff00, #ee4509ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
+.date {
+  background: linear-gradient(to right, #60ff00, #ee4509ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .colon {
   opacity: 0.7;
   animation: blink 1s steps(1) infinite;
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 0.7; }
-  50% { opacity: 0.2; }
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.2;
+  }
 }
 
 #ampm {
@@ -49,9 +60,9 @@ body {
 }
 
 .date {
-  font-family: 'Orbitron', monospace;
+  font-family: "Orbitron", monospace;
   font-size: 1.5rem;
   color: #e0e0e0;
   letter-spacing: 0.1em;
   text-shadow: 0 1px 10px #fff7;
-} 
+}
